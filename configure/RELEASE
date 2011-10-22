@@ -2,18 +2,39 @@
 # Run "gnumake clean uninstall install" in the application
 # top directory each time this file is changed.
 
+include $(TOP)/RELEASE_SITE
+
+# =============================================================
+# Define the top of the EPICS tree for your site.
+# We will build some tools/scripts that allow us to
+# change this easily when relocating software.
+# ==============================================================
 TEMPLATE_TOP=$(EPICS_BASE)/templates/makeBaseApp/top
 
-SUPPORT=/corvette/home/epics/devel
--include $(TOP)/../configure/SUPPORT.$(EPICS_HOST_ARCH)
+# =============================================================
+# Define location of module tree with respect to
+# EPICS_SITE_TOP
+# =============================================================
+EPICS_MODULES=$(EPICS_SITE_TOP)/modules/R3-14-12
 
-# ASYN is needed to compile asyn device support
-ASYN=$(SUPPORT)/asyn-4-17
+# ==============================================================
+# Define the version of EPICS BASE that you will use
+# =============================================================
+BASE_MODULE_VERSION=base-R3-14-12
 
+# =============================================================
+# Define the version of modules needed by
+# IOC apps or other Support apps
+# =============================================================
+ASYN_MODULE_VERSION=asyn-R4-17-RC1-lcls1
+# ============================================================
+# EPICS Module Support
+# ============================================================
+ASYN=$(EPICS_MODULES)/asyn/$(ASYN_MODULE_VERSION)
+
+# =================================================================
+# Define EPICS_BASE
 # EPICS_BASE usually appears last so other apps can override stuff:
-EPICS_BASE=/corvette/usr/local/epics/base-3.14.12.1
--include $(TOP)/../configure/EPICS_BASE.$(EPICS_HOST_ARCH)
+# =================================================================
+EPICS_BASE=$(EPICS_SITE_TOP)/base/$(BASE_MODULE_VERSION)
 
-#Capfast users may need the following definitions
-#CAPFAST_TEMPLATES=
-#SCH2EDIF_PATH=

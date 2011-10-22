@@ -1,0 +1,18 @@
+#==============================================================
+#
+#  Name: RELEASE_NOTES
+#
+#  Rem:  This file contains the release notes for busy package 
+#        as it pertains to the LCLS release format and procedures.
+#        The initial version of this software written 
+#        by Tim Mooney at APS.
+#
+#  Auth: dd-yyy,yyyy, Author's Name      (USERNAME)           
+#  Rev:  dd-mmm-yyyy, Reviewer's Name    (USERNAME)
+#--------------------------------------------------------------
+#  Mod:
+#         22-Oct-2011, J. Zhou        (JINGCHEN):
+#            initial build on RHEL6-64 
+#==============================================================
+devl-busy-R1-4: initial build on RHEL6-64
+
