@@ -12,29 +12,34 @@ include $(TOP)/RELEASE_SITE
 TEMPLATE_TOP=$(EPICS_BASE)/templates/makeBaseApp/top
 
 # =============================================================
-# Define location of module tree with respect to
-# EPICS_SITE_TOP
+# Define location of module tree
 # =============================================================
-EPICS_MODULES=$(EPICS_SITE_TOP)/modules/R3-14-12
+EPICS_MODULES=$(MODULES_SITE_TOP)
 
-# ==============================================================
-# Define the version of EPICS BASE that you will use
-# =============================================================
-BASE_MODULE_VERSION=base-R3-14-12
 
 # =============================================================
 # Define the version of modules needed by
 # IOC apps or other Support apps
 # =============================================================
-ASYN_MODULE_VERSION=asyn-R4-17-RC1-lcls1
+# 
+ASYN_MODULE_VERSION=asyn-R4-18-lcls1
+
+
+# ==============================================================
+# Define the version of EPICS BASE that you will use
+# =============================================================
+BASE_MODULE_VERSION=$(EPICS_BASE_VER)
+
 # ============================================================
 # EPICS Module Support
 # ============================================================
+#ASYN is needed to compile asyn device support for the busy
+# software
 ASYN=$(EPICS_MODULES)/asyn/$(ASYN_MODULE_VERSION)
 
 # =================================================================
 # Define EPICS_BASE
 # EPICS_BASE usually appears last so other apps can override stuff:
 # =================================================================
-EPICS_BASE=$(EPICS_SITE_TOP)/base/$(BASE_MODULE_VERSION)
+EPICS_BASE=$(BASE_SITE_TOP)/$(BASE_MODULE_VERSION)
 
