@@ -14,5 +14,11 @@
 #         22-Oct-2011, J. Zhou        (JINGCHEN):
 #            initial build on RHEL6-64 
 #==============================================================
+busy-R1-4-lcls2:   This version is built correctly.
+                   clean up configure/RELEASE file to take advantage of 
+                   RELEASE_SITE and be consistent with other modules
+                   fix the configure/CONFIG file so that all relevant
+                   targets are built. Not just linux
+
 devl-busy-R1-4: initial build on RHEL6-64
 
