@@ -14,7 +14,7 @@
 #         22-Oct-2011, J. Zhou        (JINGCHEN):
 #            initial build on RHEL6-64 
 #==============================================================
-busy-R1-4-lcls4:   Build against a version of asyn with sequencer 
+busy-R1-4-lcls3:   Build against a version of asyn with sequencer 
                    dependency removed. asyn_version = asyn-R4-18-lcls2
 
 busy-R1-4-lcls2:   This version is built correctly.
