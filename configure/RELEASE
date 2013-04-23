@@ -22,7 +22,7 @@ EPICS_MODULES=$(MODULES_SITE_TOP)
 # IOC apps or other Support apps
 # =============================================================
 # 
-ASYN_MODULE_VERSION=asyn-R4-20_1-1
+ASYN_MODULE_VERSION=asyn-R4-21_1-0
 
 
 # ==============================================================
