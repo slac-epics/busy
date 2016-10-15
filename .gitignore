@@ -1,0 +1,6 @@
+O.*
+*.log
+db
+dbd
+lib
+include
