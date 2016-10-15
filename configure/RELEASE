@@ -18,3 +18,4 @@ TEMPLATE_TOP=$(EPICS_BASE)/templates/makeBaseApp/top
 #Capfast users may need the following definitions
 #CAPFAST_TEMPLATES=
 #SCH2EDIF_PATH=
+
