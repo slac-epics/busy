@@ -1,5 +1,6 @@
 *~
 O.*
+*.log
 *.swp
 *BAK.adl
 bin/
@@ -15,3 +16,4 @@ dllPath.bat
 auto_settings.sav*
 auto_positions.sav*
 RELEASE.local
+RELEASE_SITE
