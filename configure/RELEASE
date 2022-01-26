@@ -8,7 +8,7 @@ TEMPLATE_TOP=$(EPICS_BASE)/templates/makeBaseApp/top
 -include $(TOP)/../configure/SUPPORT.$(EPICS_HOST_ARCH)
 
 # ASYN is needed to compile asyn device support
-#ASYN=$(SUPPORT)/asyn-4-32
+ASYN=$(EPICS_MODULES)/asyn/R4.39-1.0.1
 
 # AUTOSAVE is needed for the test application only
 #AUTOSAVE=$(SUPPORT)/autosave-5-8
