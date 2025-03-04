@@ -14,6 +14,10 @@
 #         22-Oct-2011, J. Zhou        (JINGCHEN):
 #            initial build on RHEL6-64 
 #==============================================================
+R1.6.1-0.2.8: 2025-05-04 Sonya Hoobler
+	Update to asyn/R4.39-1.0.2, which includes tirpc needed
+      to build for rhel9_x86_64
+
 R1.6.1-0.2.7: 2019-04-01 Bruce Hill
 	Update to asyn/R4.32-1.0.1 and suppress linux-arm CROSS
 
