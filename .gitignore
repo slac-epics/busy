@@ -3,6 +3,7 @@ O.*
 *.log
 *.swp
 *BAK.adl
+autosave/
 bin/
 db/
 dbd/
